@@ -38,7 +38,7 @@ const loaderFunction = async () => {
         };
         const restaurantData = new Restaurant(saveData);
         await restaurantData.save();
-        console.log("Inserted one query: ", count++);
+        console.log("Inserted: ", count++);
         if (datas.length - 1 === count) {
           await fetcher();
         }
